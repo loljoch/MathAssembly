@@ -34,7 +34,7 @@ namespace DevMath
 
         public static Vector2 Lerp(Vector2 a, Vector2 b, float t)
         {
-            return new Vector2(DevMath.Lerp(a.x, b.x, t), DevMath.Lerp(a.y, b.y, t));
+            return a + ((b - a) * t);
         }
 
         public static float Angle(Vector2 lhs, Vector2 rhs)

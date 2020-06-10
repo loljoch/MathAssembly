@@ -46,7 +46,7 @@ namespace DevMath
 
         public static Vector3 Lerp(Vector3 a, Vector3 b, float t)
         {
-            return new Vector3(DevMath.Lerp(a.x, b.x, t), DevMath.Lerp(a.y, b.y, t), DevMath.Lerp(a.z, b.z, t));
+            return a + ((b - a) * t);
         }
 
         public static Vector3 operator +(Vector3 lhs, Vector3 rhs)
